@@ -2,41 +2,48 @@
 <html lang="en-US">
 <head>
     <style>
-        .resume {
+        div {
             display: flex;
+        }
+        .resume {
             flex-direction: column;
         }
         .name {
-            display: flex;
             flex-direction: row;
             justify-content: center
         }
         .subheading {
-            display: flex;
-            border-bottom: 1px solid;
             flex-direction: row;
             justify-content: space-between;
         }
         .section {
-            display: flex;
             flex-direction: column;
+            border-top: 2px solid;
         }
-        section-title {
-            display: flex;
+        .section-title {
+            text-transform: uppercase;
         }
         .item {
-            display: flex;
             flex-direction: column;
         }
+        .titledate {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
         .title {
-            display: flex;
-            flex-flow: row wrap;
+            display: block;
+        }
+        .date {
+            display: block;
+            text-align: right;
+        }
+        ul {
+            margin:0;
         }
     </style>
 </head>
 <body>
-
-
 <div class="resume">
     <div class="name">
         <h1>Peter (Rocky) Villano</h1>
@@ -46,11 +53,11 @@
         github.com/pvillano<br/>
         linkedin.com/in/pvillan
     </div>
-    <div align="middle">
+    <div style="text-align:center">
         peter.s.villano@gmail.com<br/>
         (574)-855-9777
     </div>
-    <div align="right">
+    <div style="text-align:right">
         50630 Hollybrook Drive<br/>
         Granger, IN 46530
     </div>
@@ -58,17 +65,154 @@
 
   <div class="section">
       <div class="section-title">
-          <b>EDUCATION</b>
+          <b>Education</b>
       </div>
-<!--      <div class="item">-->
-          <div class="title">
-              <div style="display: flex"><b>Purdue University</b>, </div>
-              <div style="display: flex">West Lafayette, IN </div>
-              <div style="display: flex"><i>B.S. in Computer Science Honors;</i></div>
-              <div style="display: flex"><i> Minors in Mathematics &amp;Psychology</i></div>
+      <div class="item">
+          <div class="titledate">
+              <div class="title">
+                  <b>Purdue University</b>, West Lafayette, IN <br>
+                  <i>B.S. in Computer Science Honors; Minors in Mathematics &amp;Psychology</i>
+              </div>
+              <div class="date">
+                  May 2019
+              </div>
           </div>
-          <div></div>
-<!--      </div>-->
+          <ul>
+              <li>Overall GPA: 3.2; Major GPA: 3.7</li>
+          </ul>
+      </div>
+  </div>
+  <div class="section">
+      <div class="section-title">
+          <b>Professsional Experience</b>
+      </div>
+      <div class="item">
+          <div class="titledate">
+              <div class="title">
+                  <b>Center for Research Computing</b>, University of Notre Dame<br>
+                  <i>Assistant Research Programmer</i>
+              </div>
+              <div class="date">
+                  July 2019 - Present
+              </div>
+          </div>
+          <ul>
+              <li>Designed, implemented, and documented RESTful APIs</li>
+              <li>Developed unit and integration tests with unittest and Factory Boy</li>
+              <li>Developed custom interactive debugging and administrative tools</li>
+          </ul>
+      </div>
+      <div class="item">
+          <div class="titledate">
+              <div class="title">
+                  <b>Computer Graphics and Visualization Lab</b>, Purdue University<br>
+                  <i>Honors Research Project (for credit)</i>
+              </div>
+              <div class="date">
+                  Jan 2019 - May 2019
+              </div>
+          </div>
+          <ul>
+              <li>Created automatic statistics generator with significant results display</li>
+              <li>Consulted on ergonomics for an augmented reality user interface</li>
+              <li>Contributed to an Android app, using camera and networking APIs</li>
+          </ul>
+      </div>
+      <div class="item">
+          <div class="titledate">
+              <div class="title">
+                  <b>Center for Research Computing</b>, University of Notre Dame<br>
+                  <i>Undergraduate Research Assistant (Summer)</i>
+              </div>
+              <div class="date">
+                  May 2017 - Aug 2018
+              </div>
+          </div>
+          <ul>
+              <li>Examined Tensorflow for suitability in satellite image classification</li>
+              <li>Developed Android app used for machine learning data acquisition</li>
+              <li>Implemented a server backend using PHP and SQL</li>
+              <li>Programmatically generated insightful visualizations in Python</li>
+          </ul>
+      </div>
+      <div class="item">
+          <div class="titledate">
+              <div class="title">
+                  <b>Engineering and Science Computing</b>, University of Notre Dame<br>
+                  <i>B.S. in Computer Science Honors; Minors in Mathematics &amp;Psychology</i>
+              </div>
+              <div class="date">
+                  June 2013 - Aug 2016
+              </div>
+          </div>
+          <ul>
+              <li>Collaborated with students, professors, and staff to solve IT problems</li>
+              <li>Presented cost analysis of adopting virtual desktop infrastructure</li>
+          </ul>
+      </div>
+  </div>
+  <div class="section">
+      <div class="section-title">
+          <b>Leadership Experience</b>
+      </div>
+      <div class="item">
+          <div class="titledate">
+              <div class="title">
+                  <b>BoilerMake</b>, West Lafayette IN<br>
+                  <i>Software Developer</i><br>
+                  <i>Event Planning Board Member</i><br>
+                  <i>Social Media Coordinator</i>
+              </div>
+              <div class="date">
+                  Jan 2018 - Dec 2019<br>
+                  Jan 2017 - Dec 2018<br>
+                  Jan 2016 - Dec 2017
+              </div>
+          </div>
+          <ul>
+              <li>Attracted largest ever applicant pool (1600) to Purdue's premier hackathon</li>
+          </ul>
+      </div>
+      <div class="item">
+          <div class="titledate">
+              <div class="title">
+                  <b>Boy Scouts of America</b>, Troop 572, Granger IN<br>
+                  <i>Eagle Scout</i>
+              </div>
+              <div class="date">
+                  June 2008 - June 2015
+              </div>
+          </div>
+          <ul>
+              <li>Constructed three telescope platforms at Potawatomi Wildlife Park</li>
+          </ul>
+      </div>
+  </div>
+  <div class="section">
+      <div class="section-title">
+          <b>Affiliations</b>
+      </div>
+      <div class="titledate">
+          <div class="title">Association for Computing Machinery</div>
+          <div class="date">Sept 2015 - present</div>
+      </div>
+      <div class="titledate">
+          <div class="title">
+              Special Interest Group on Graphics and Interactive Techniques
+          </div>
+          <div class="date">Sept 2015 - present</div>
+      </div>
+  </div>
+  <div class="section">
+      <div class="section-title">
+          <b>Technical Skills</b>
+      </div>
+          <div class="title">
+              <b>Proficiencies</b>: Python, Django, C, C++, Java, OpenGL, PHP, SQL, JavaScript, Android
+          </div>
+          <div class="title">
+              <b>Misc. Skills</b>: Safe Cracking, Wilderness Survival, Poetry
+          </div>
   </div>
 </div>
 </body>
